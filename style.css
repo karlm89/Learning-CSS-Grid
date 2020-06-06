@@ -1,0 +1,20 @@
+.item {
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    
+    grid-auto-flow: row;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    max-width: 1400px;
+    margin:auto;
+}
+
+@media (min-width: 515px){
+    .grid-container{
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+}
